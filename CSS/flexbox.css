@@ -17,12 +17,14 @@
     align-content: center;
     text-align: center;
     padding-top: 25px;
+    flex-grow: .66;
 }
 
 #flex-item2 {
     background: #00ff00;
     height: 220px;
     order: -2;
+    flex-grow: .33;
 }
 
 #flex-item3 {
@@ -30,5 +32,5 @@
     height: 200px;
     order: -1;
     text-align: center;
-
+    flex-grow: .33;
 }
