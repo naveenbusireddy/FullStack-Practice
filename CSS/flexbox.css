@@ -1,0 +1,31 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    min-height: 200px;
+    min-width: 150px;
+    align-items: center;
+}
+
+#flex-item1 {
+    background: #ff0000;
+    height: 250px;
+    align-content: center;
+
+}
+
+#flex-item2 {
+    background: #00ff00;
+    height: 220px;
+    order: -2;
+}
+
+#flex-item3 {
+    background: #0000ff;
+    height: 200px;
+    order: -1;
+}
