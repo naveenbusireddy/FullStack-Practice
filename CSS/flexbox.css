@@ -15,7 +15,8 @@
     background: #ff0000;
     height: 250px;
     align-content: center;
-
+    text-align: center;
+    padding-top: 25px;
 }
 
 #flex-item2 {
@@ -28,4 +29,6 @@
     background: #0000ff;
     height: 200px;
     order: -1;
+    text-align: center;
+
 }
