@@ -55,4 +55,4 @@ for(var l=5; l<61; l++)
 {
     if(l%5===0 && l%3===0)
     console.log(l);
-}
+}  
