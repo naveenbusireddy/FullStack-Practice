@@ -35,7 +35,7 @@ const squares = document.querySelectorAll(".square")
 const colorDisplay = document.getElementById("colorDisplay");
 const message = document.getElementById("message");
 const title = document.querySelector("h1");
-const body = document.querySelector("body");
+const resetButton = document.getElementById("resetButton");
 
 
 const pickColor = () => {
@@ -45,10 +45,19 @@ const pickColor = () => {
 
 //choose winning Color
 let pickedColor = pickColor();
-
 //update color display
 colorDisplay.textContent = pickedColor;
 
+resetButton.addEventListener("click", function() {
+    colors = generateRandomColors(6);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    title.style.backgroundColor = "black";
+    for(let i=0; i<squares.length; i++)
+    {
+        squares[i].style.backgroundColor = colors[i];
+    }
+})
 //set squares
 for(let i=0; i<squares.length; i++)
 {
@@ -66,7 +75,7 @@ for(let i=0; i<squares.length; i++)
         }
         else {
             message.textContent = "Wrong !";
-            this.style.backgroundColor = `${body.style.backgroundColor}`;
+            this.style.backgroundColor = `${document.querySelector("body").style.backgroundColor}`;
         }
     })
 }
