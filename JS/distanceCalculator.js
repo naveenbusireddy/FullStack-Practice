@@ -6,8 +6,8 @@ var travelledDistance = 0;
 
 
 function distanceCalculator() {
-    var newdistance = distance.value;
-    console.log(newdistance);
+    var new_distance = distance.value;
+    console.log(new_distance);
     // for(var i=o; i<= distance; i+7)
     // {
 
@@ -15,12 +15,13 @@ function distanceCalculator() {
     // if(travelledDistance < distance.value)
     // {
     //     travelledDistance = travelledDistance+7;
-    //     days = days+1;
+    //     days = days+1; 
     //     output.innerHTML = days;
     // }
     // else {
 
     // }
+
 }
 
 submit.addEventListener("click", distanceCalculator)
