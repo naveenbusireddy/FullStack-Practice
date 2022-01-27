@@ -1,9 +1,28 @@
 body {
     background-color: black;
+    align-items: center;
 }
 
 h1 {
     color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: steelblue;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+button  {
+    border: none;
+    transform: all 0.3s;
+}
+
+.selected {
+    background-color: blue;
+}
+button:hover {
+    color: white;
+    background-color: steelblue;
 }
 
 .square {
@@ -11,6 +30,7 @@ h1 {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 20%;
 }
 
 #container  {
@@ -20,5 +40,11 @@ h1 {
 
 #stripe    {
     background-color: white;
-    max-width: 600px;
+    margin-bottom: 2rem;
+    
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
 }
